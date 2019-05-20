@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Patient</title>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <center>
+                <div id="hdr">
+                    <h1>ViZ HOSPITAL</h1>
+                </div>
+            </center>
+            <div id="menu">
+                <center>
+                    <input id="men" type="button" name="home" value="Home" onclick="window.location.href='home.html'" />
+                    <input id="men" type="button" name="patient" value="Patient" onclick="window.location.href='patienthm.html'" />
+                    <input id="men" type="button" name="staff" value="Staff" onclick="window.location.href='staffhm.html'" />
+                    <input id="men" type="button" name="about" value="About" onclick="window.location.href='about.html'" />
+                    <input id="men" type="button" name="contact" value="Contact" onclick="window.location.href='contact.html'" />
+                </center>
+            </div>
+
+            <div id="pt">
+                <h2>Registration</h2>
+                <form action = "patientreg.php" method = "POST">
+                    <center>
+                        <table style="padding: 10px;">
+                            <tr>
+                                <td>Op Number</td>
+                                <td>
+                                    <input class="textbox" name="opnum" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>
+                                    <input class="textbox" name="name" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>
+                                    <input class="textbox" name="age" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>
+                                    <input name="gender" value="Male" type="radio"> Male
+                                    <br>
+                                    <input name="gender" value="Female" type="radio"> Female
+                                    <br>
+                                    <input name="gender" value="Others" type="radio"> Others</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>
+                                    <textarea name="addr" class="textbox" rows="5" cols="10"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Blood Group</td>
+                                <td>
+                                    <select style="width: 60px;" name = "bg">
+                                        <option value="a+">A+</option>
+                                        <option value="a-">A-</option>
+                                        <option value="b+">B+</option>
+                                        <option value="b-">B-</option>
+                                        <option value="o+">O+</option>
+                                        <option value="o-">O-</option>
+                                        <option value="ab+">AB+</option>
+                                        <option value="ab-">AB-</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number</td>
+                                <td>
+                                    <input class="textbox" name="phone" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>
+                                    <input class="textbox" name="password" type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input id="men" style="margin-left: 130px; margin-top: 10px;cursor: pointer;" name="register" value="Register" type="submit"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                        <hr>
+                        <div id="pt1">
+                            <table style="padding: 10px;">
+                                <tr>
+                                    <td>Already REGISTERED....?</td>
+                                    <td>
+                                        <input id="men" name="login" value="Login" type="button" onclick="window.location.href='ptlogin.html'" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
